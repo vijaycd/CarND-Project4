@@ -1,4 +1,4 @@
-#shrih
+#
 #C. D. Vijay, CarND-Term 1, Project 4
 
 import numpy as np
