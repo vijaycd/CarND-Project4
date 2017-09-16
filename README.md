@@ -17,4 +17,4 @@ ___________________________________________
 
 Your Choice (Enter to exit): 
 
-Select option 1 to run the project_video.mp4 frame by frame.
+Select option 1 to run the project_video.mp4 frame by frame. The video is not running yet.
