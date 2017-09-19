@@ -319,9 +319,10 @@ def DrawImg(image, warped, left_fitx, right_fitx, ploty, Minv, undist):
     # Combine the result with the original image
     #print ('Shapes -und, warped',  undist.shape, newwarp.shape, undist.size, newwarp.size)
     result = cv2.addWeighted(undist, 1, newwarp[:,:,0], 0.3, 0)
-    #return result
-    plt.imshow(result)
-    plt.show()
+    return result
+    
+    #plt.imshow(result)
+    #plt.show()
 
 #EXECUTION STARTS HERE
 parser = argparse.ArgumentParser(description='Udacity-CarND-T1-P4-: Advanced Lane Detection')
@@ -446,10 +447,11 @@ while True:
         #    print ('Search did not yield any lane lines in frame # ', framenum)
         #    ploty, left_fitx, right_fitx = DetectLanes_FitPoly(binary_warped)
     
-        DrawImg(image, binary_warped, left_fitx, right_fitx, ploty, Minv, und)
+        res = DrawImg(image, binary_warped, left_fitx, right_fitx, ploty, Minv, und)
         
-    #if cv2.waitKey(5) & 0xFF == ord('q'):
-    #    break
+        #cv2.imshow('Adv Lane Det.',res)
+        #if cv2.waitKey(5) & 0xFF == ord('q'):
+        #    break
 
     if (video == 1): 
         framenum+=1
