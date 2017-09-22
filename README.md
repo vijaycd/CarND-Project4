@@ -16,4 +16,4 @@ ___________________________________________
 Your Choice (Enter to exit): 
 
 Select option 1 to run the project_video.mp4 frame by frame. 
-A test video of the lanes being detected in real-time is here: https://www.youtube.com/watch?v=6-RbTXNkLhg
+A test video of the lanes being detected in real-time is here: https://youtu.be/9USNCx_9ODw
