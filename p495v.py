@@ -168,7 +168,8 @@ def CheckWhetherCurvesParallel(ploty, left_fitx, right_fitx, fn):
     #print ('\nMax. dist b/w lane lines=', np.max(distances), '\n')
     
     #Check differences, set tolerance to 25% of lane width (currently, 3.7m or 700 pix)
-    tolerance = 0.25 * np.min (distances)
+    #tolerance = 0.25 * np.min (distances)
+    tolerance = 0.25 * 700 #700 px make 3.7m, 1 lane width
     if   (np.abs(distances[0] - distances[1])) > tolerance:
         print ('Lane line deviation > 25% of lane width! (in m)', np.abs(distances[0] - distances[1])*3.7/700)
     elif np.abs(distances[1] - distances[2]) > tolerance:
